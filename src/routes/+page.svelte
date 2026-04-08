@@ -15,7 +15,7 @@ let count = $state(5);
   </p>   
 
 
-<style>
+<style> 
     h1 {
         color: deepskyblue;
     }
