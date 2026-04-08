@@ -1,7 +1,7 @@
 <script>
  console.log('Hello from SvelteKit!');   
- let { initialCount= $bindable() } = $props();
- let count = $state(initialCount);
+ let { initialCount:count } = $props();
+
  let doubled = $derived(count * 2);
 </script>
 
