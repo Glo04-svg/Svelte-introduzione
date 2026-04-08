@@ -5,7 +5,7 @@ console.log('Ciao MERDE!');
 let count = $state(5);
 </script> 
 
-<h1>Welcome to SvelteKit</h1>
+<h1>Welcome to SvelteKit, GLO!</h1>
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
 
 <ClicksCounter bind:initialCount={count} />
@@ -17,10 +17,10 @@ let count = $state(5);
 
 
 <style> 
+
     h1 {
-        color: deepskyblue;
+        color: rgb(255, 230, 251);
+        font-family: 'Press Start 2P', cursive;
     }
-    p {
-        color: rgb(164, 0, 27) ;
-    }
+  
 </style>
