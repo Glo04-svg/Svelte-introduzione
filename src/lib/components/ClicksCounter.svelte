@@ -7,7 +7,7 @@
 
 <h3>Clicks Counter</h3>
 
-<button on:click={() => count++}>
+<button onclick={() => count++}>
     clicks: {count}
 </button>
 
