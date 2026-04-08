@@ -1,14 +1,21 @@
 <script>
+  import { website } from '$lib/state.svelte.js';
 import ClicksCounter from '$lib/components/ClicksCounter.svelte';
 import CanvasSquare from '$lib/components/CanvasSquare.svelte';
   import TodoList from '$lib/components/TodoList.svelte';
+  import TitleEditor from '$lib/components/TitleEditor.svelte';
+
 let count = $state(5);
 console.log('Ciao MERDE!');
 
 </script> 
 
-<h1>Welcome to SvelteKit, GLO!</h1>
+
+
+<h1>{website.title}</h1>
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+
+<TitleEditor />
 
 <ClicksCounter bind:initialCount={count} />
 
@@ -24,6 +31,8 @@ console.log('Ciao MERDE!');
 <CanvasSquare />
 
 <TodoList />
+
+
 
 <style> 
 

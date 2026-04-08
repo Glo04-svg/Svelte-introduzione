@@ -1,7 +1,7 @@
 <script>
     let todos = $state([
         { title: 'Assignment 1', done: false },
-        { title: 'Assignment 2', done: false },
+        { title: 'Assignment 2', done: true },
         { title: 'Assignment 3', donez: false }
     ]);
     //array di oggetti, ogni oggetto ha una proprietà title e done
