@@ -1,6 +1,7 @@
 <script>
 import ClicksCounter from '$lib/components/ClicksCounter.svelte';
 import CanvasSquare from '$lib/components/CanvasSquare.svelte';
+  import TodoList from '$lib/components/TodoList.svelte';
 let count = $state(5);
 console.log('Ciao MERDE!');
 
@@ -11,6 +12,7 @@ console.log('Ciao MERDE!');
 
 <ClicksCounter bind:initialCount={count} />
 
+
 {#if count > 10 && count < 20}
      <p> count from parent is {count} </p>
 {:else if count > 30}
@@ -19,9 +21,9 @@ console.log('Ciao MERDE!');
      <p> count from parent is not in range </p>
 {/if}
  
-  
-
 <CanvasSquare />
+
+<TodoList />
 
 <style> 
 
