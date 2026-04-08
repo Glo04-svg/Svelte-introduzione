@@ -1,5 +1,6 @@
 <script>
-import { onMount } from 'svelte';
+import { untrack } from 'svelte';
+
     let size = $state(50);
     let color = $state('#ff3e00');
 
@@ -9,11 +10,12 @@ import { onMount } from 'svelte';
         const context = canvas.getContext('2d');
         context.clearRect(0, 0, canvas.width, canvas.height);
 
-        context.fillStyle = color;
+        context.fillStyle = untrack(() => color);
         context.fillRect(0, 0, size, size);
     });
 
-    //CODICE GIRA X NUMERI DI VOLTE CHE CAMBIO SIZE O COLOR, NON SOLO ALL'INIZIO
+// Con `onMount` il codice genera X numeri **solo all’inizio** al montaggio del componente, es componente che prende dati api dal meteo.
+// Con `$:` (reactive statement) i numeri vengono aggiornati **solo quando cambiano** `size` o `color`, non automaticamente all’inizio, prende dati continuamente.
 
    ;
 </script>
