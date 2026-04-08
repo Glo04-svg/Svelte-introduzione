@@ -32,13 +32,14 @@
 	footer {
 		text-align: center;
 		padding: 10px 30px 15px 30px;
+		width: 100%;
 		background-color: #f0f0f0;
 	}
 
 :global(body) {
         background-color: #1b1818; 
         color: #fff; 
-        margin: 0; 
+        margin: auto; 
         font-family: 'Press Start 2P', cursive;
     }
 
