@@ -11,11 +11,11 @@
 {@render children()}
 
 <footer>
-	<p>polimi © 2026</p>
+	<p>© Polimi 2026</p>x
 </footer>
 
 <style>
       :global(p) {
-        color: #f90099;
+        color: #ff009d;
     }
 	</style>

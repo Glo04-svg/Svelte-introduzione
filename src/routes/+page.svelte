@@ -1,6 +1,7 @@
 <script>
 import ClicksCounter from '$lib/components/ClicksCounter.svelte';
 import ProgressiveSum from '$lib/components/ProgressiveSum.svelte';
+console.log('Ciao MERDE!');
 let count = $state(5);
 </script> 
 
@@ -18,5 +19,8 @@ let count = $state(5);
 <style> 
     h1 {
         color: deepskyblue;
+    }
+    p {
+        color: rgb(164, 0, 27) ;
     }
 </style>
