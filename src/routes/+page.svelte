@@ -58,4 +58,11 @@
 
     max-width: fit-content;
   }
+  img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 </style>
